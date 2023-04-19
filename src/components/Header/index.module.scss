@@ -1,0 +1,132 @@
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        height: 168px;
+
+        img{
+            width: 270px;
+            height: 129px;
+            margin-top: 44px;
+        }
+
+    }
+    .search{
+
+        margin-top: 21px;
+        position: relative;
+
+
+        input:first-child{
+        width: 527px;
+        height: 38px;
+        border: rgb(196, 199, 206) solid 2px;
+        border-radius: 10px 0 0 10px;
+        border-right:none;
+        padding-left: 14px;
+        font-size: 17px;
+        outline: none;
+        
+
+        &:hover{
+            border-color: rgb(167, 170, 181);
+        }
+
+        &:focus{
+            border-color: rgb(78, 110, 242);
+        }
+        
+        }
+
+        .camera{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 13px;
+            right:125px;
+            cursor: pointer;
+        }
+
+        .mic{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 13px;
+            right:155px;
+            cursor: pointer;
+        }
+
+        .xx{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 13px;
+            right:185px;
+            cursor: pointer;
+        }
+
+        input:last-child{
+            height: 44px;
+            width: 108px;
+            border-radius: 0 10px 10px 0;
+            background-color: rgb(78, 110, 242);
+            color: white;
+            vertical-align: top;
+            font-size: 17px;
+            border: none;
+
+            &:hover{
+                background-color: rgb(70, 98, 217);
+            }
+        }
+    }
+    .list{
+        //display: inline-block;
+        display: inline-block;
+        width: 543px;
+        background-color: white;
+        border: rgb(78, 110, 242) solid 2px;
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        left: 0;
+        top: 31px;
+
+        >div{
+            margin: 12px 14px 0;
+            height: 0.5px;
+            background-color: #ccc;
+        }
+
+        ul{
+            margin-top: 0px;
+            // border-top:1px solid black;
+            width: 543px;
+            padding-top: 7px;
+            padding-left: 0;
+            overflow: hidden;
+            li{
+                width: 100%;
+                list-style: none;
+                line-height: 28px;
+                font-size: 17px;
+                cursor: pointer;
+                padding-left: 14px;
+                &:hover{
+                    background-color: #ccc;
+                    color:rgb(78, 110, 242);
+                }
+            }
+        }
+    }
+    .hidden{
+        display: none;
+    }
+}
