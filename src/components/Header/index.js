@@ -49,18 +49,22 @@ const Header = () => {
   };
 
   const handleFocus = () => {
+    //重新将输入框的内容进行搜索
     setArr(list.current)
   };
 
   const handleBlur = () => {
+    //关闭下拉框
     setArr([])
   };
 
   const clickitem = (text) => {
+    //点击后将内容传入搜索框
     setInputValue(text);
   };
 
   const clear = () => {
+    //清除输入框内容
     setInputValue("");
   }
 
